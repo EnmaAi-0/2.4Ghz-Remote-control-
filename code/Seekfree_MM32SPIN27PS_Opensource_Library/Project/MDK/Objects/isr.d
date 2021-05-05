@@ -78,4 +78,6 @@
 .\objects\isr.o: ..\..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h
 .\objects\isr.o: ..\CODE\si24r1.h
 .\objects\isr.o: ..\CODE\system.h
+.\objects\isr.o: ..\CODE\loop.h
+.\objects\isr.o: ..\CODE\key.h
 .\objects\isr.o: ..\USER\inc\isr.h

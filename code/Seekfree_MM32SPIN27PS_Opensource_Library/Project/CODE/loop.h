@@ -13,6 +13,14 @@ typedef struct
 	uint32 last_run;				//最后一次运行时间
 }sched_task_t;
 
+//定义结构体,用于发送float数据
+//https://blog.csdn.net/ls667/article/details/50811519博客
+typedef union     
+{
+	float fdata;
+	unsigned long ldata;
+}FloatLongType;
+
 
 void Loop_Run(void);
 void Ang_Loop0(void);

@@ -79,3 +79,5 @@
 .\objects\seekfree_absolute_encoder.o: ..\CODE\si24r1.h
 .\objects\seekfree_absolute_encoder.o: ..\..\Libraries\seekfree_libraries\headfile.h
 .\objects\seekfree_absolute_encoder.o: ..\CODE\system.h
+.\objects\seekfree_absolute_encoder.o: ..\CODE\loop.h
+.\objects\seekfree_absolute_encoder.o: ..\CODE\key.h

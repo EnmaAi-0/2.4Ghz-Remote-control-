@@ -20,6 +20,14 @@ void system_init(void)
 	
 	//2.4G通讯模块 SI24R1初始化
 	NRF_Dev_Init();
+	
+	//按键初始化
+	key_init();
+
+	
+	
+	//用于产生时钟
+	tim_interrupt_init_ms(TIM_14,1, 3);
 }
 
 

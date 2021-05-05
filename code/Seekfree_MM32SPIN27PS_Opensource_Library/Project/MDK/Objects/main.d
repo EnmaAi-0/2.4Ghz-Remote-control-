@@ -78,3 +78,5 @@
 .\objects\main.o: ..\..\Libraries\seekfree_peripheral\SEEKFREE_MT9V03X.h
 .\objects\main.o: ..\CODE\si24r1.h
 .\objects\main.o: ..\CODE\system.h
+.\objects\main.o: ..\CODE\loop.h
+.\objects\main.o: ..\CODE\key.h

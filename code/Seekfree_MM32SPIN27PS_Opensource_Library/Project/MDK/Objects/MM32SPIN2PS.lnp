@@ -3,6 +3,8 @@
 ".\objects\main.o"
 ".\objects\si24r1.o"
 ".\objects\system.o"
+".\objects\loop.o"
+".\objects\key.o"
 ".\objects\board.o"
 ".\objects\common.o"
 ".\objects\seekfree_printf.o"

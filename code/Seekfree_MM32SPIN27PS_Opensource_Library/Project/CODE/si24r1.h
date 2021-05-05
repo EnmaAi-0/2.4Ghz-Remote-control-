@@ -170,6 +170,7 @@
 #define NRF_RCD_RF_DR_2Mbps         1<<3    // bit5&bit3=01=2Mbps
 #define NRF_RCD_PLL_LOCK_DI         0<<4    // bit4=PLL_LOCK=0=²»Ëø¶¨PLL
 #define NRF_RCD_PLL_LOCK_EN         1<<4    // bit4=PLL_LOCK=1=Ëø¶¨PLL
+#define NRF_RCD_RF_PWR_7dBm			0x07
 #define NRF_RCD_RF_PWR_0dBm         3<<1    // bit2:1=RF_PWR=11=0dBm
 #define NRF_RCD_RF_PWR_n6dBm        2<<1    // bit2:1=RF_PWR=10=-6dBm
 #define NRF_RCD_RF_PWR_n12dBm       1<<1    // bit2:1=RF_PWR=01=-12dBm

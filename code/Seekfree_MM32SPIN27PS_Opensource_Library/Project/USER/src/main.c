@@ -19,7 +19,8 @@
 
 #include "headfile.h"
 
-
+//		直接兼容逐飞科技的无线串口模块
+//使用时只需更改 NRF_RF_Addr 的地址即可通讯
 int main(void)
 {
 	board_init(true);																// 初始化 debug 输出串口
@@ -27,36 +28,9 @@ int main(void)
 
 	while(1)
 	{
-		Rocker_LX=adc_convert(ADC_1, ADC1_CH00_A00);
-		Rocker_LY=adc_convert(ADC_1, ADC1_CH02_A02);
-		Rocker_RX=adc_convert(ADC_1, ADC1_CH03_A03);
-		Rocker_RY=adc_convert(ADC_1, ADC1_CH05_A05);
-		Battery_Power=(float)adc_convert(ADC_1, ADC1_CH06_A06) * 0.0046385f;
 		
-		oled_int16(0,0,Rocker_LX);
-		oled_int16(1,1,Rocker_LY);
-		oled_int16(2,2,Rocker_RX);
-		oled_int16(3,3,Rocker_RY);
-		oled_printf_float(4,4,Battery_Power,2,2);
-		
-		
-				//如果使用USB转NRF接收数据，这位表示本次数据包 有效个数
-        NRF_RX_Buff[0] = 11;  
-        //当USB转NRF收到数据后，输出的数据个数等于此位的值
-        NRF_RX_Buff[1] = 0;
-        NRF_RX_Buff[2] = 1;
-        NRF_RX_Buff[3] = 2;
-        NRF_RX_Buff[4] = 3;
-        NRF_RX_Buff[5] = 4;
-        NRF_RX_Buff[6] = 5;
-        NRF_RX_Buff[7] = 6;
-        NRF_RX_Buff[8] = 7;
-        NRF_RX_Buff[9] = 8;
-        NRF_RX_Buff[10] = 9;
-        NRF_RX_Buff[11] = 10;
-        
-        NRF_Send_Packet(NRF_RX_Buff);
-        systick_delay_ms(100);
+		Loop_Run();
+
 	}
 }
 // **************************** 代码区域 ****************************

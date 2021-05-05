@@ -61,6 +61,9 @@
 
 #include "si24r1.h"
 #include "system.h"
+#include "loop.h"
+#include "key.h"
+
 
 #endif
 
