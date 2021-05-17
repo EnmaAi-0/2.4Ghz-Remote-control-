@@ -385,17 +385,16 @@ ARM Macro Assembler    Page 6
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=.\objects\startup_mm32spin2xx_p_keil.d -o.\objects\startup_mm32spi
-n2xx_p_keil.o -IF:\Ð¡ÏîÄ¿\Si24r1Ò£¿Ø\code\Seekfree_MM32SPIN27PS_Opensource_Libr
-ary\Project\MDK\RTE\_MM32SPIN27PS_Demo -IE:\MDK5\ARM\CMSIS\Include --predefine=
-"__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 522" --list=.\listings\
+n2xx_p_keil.o -I.\RTE\_MM32SPIN27PS_Demo -IE:\MDK5\ARM\CMSIS\Include --predefin
+e="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 527" --list=.\listing
+s\startup_mm32spin2xx_p_keil.lst ..\..\Libraries\Device\MM32SPIN2xx_p\Source\KE
 
 
 
 ARM Macro Assembler    Page 7 
 
 
-startup_mm32spin2xx_p_keil.lst ..\..\Libraries\Device\MM32SPIN2xx_p\Source\KEIL
-_StartAsm\startup_mm32spin2xx_p_keil.s
+IL_StartAsm\startup_mm32spin2xx_p_keil.s
 
 
 

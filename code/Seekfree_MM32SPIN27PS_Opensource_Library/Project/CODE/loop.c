@@ -79,6 +79,9 @@ void Ang_Loop1(void)
 	
 		switch(Button_Press())		//按下按键，特殊指令位
 		{
+			case 0:
+				NRF_RX_Buff[7] = 0;
+				break;
 			case 1: 
 				NRF_RX_Buff[7] = 1 ;		//解锁
 				break;
